@@ -10,6 +10,21 @@ const Carusel  = () => {
         speed: 500,
         slidesToShow: 4,
         slidesToScroll: 1,
+
+        responsive: [
+          {
+            breakpoint: 1300,
+            settings: {
+              slidesToShow: 3
+            }
+          },
+          {
+            breakpoint: 1100,
+            settings: {
+              slidesToShow: 1
+            }
+          }
+        ]
       };
 
     return(
