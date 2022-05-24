@@ -1,0 +1,88 @@
+$font-familyRaleway: 'Raleway', sans-serif;
+
+.blogWrapper{
+    background-color: #000;
+    color: #fff;
+    padding: 20px 230px;
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    align-items: center;
+    .createWrapper{
+        display: flex;
+        justify-content: space-between;
+        .titleWrapper{
+            font-size: 35px;
+            font-family: $font-familyRaleway;
+            font-weight: bold;
+            line-height: 35px;
+        }
+        .personalStyl {
+            color: #f2184f;
+        }
+        .nomitationsWrapper {
+            margin-right: 80px;
+        }
+    }
+    
+    .awardsWrapper{
+        margin-top: 20px;
+        display: flex;
+        gap: 20px;
+        .description {
+            font-size: 15px;
+            font-family: $font-familyRaleway;
+            color: #fffcf4;
+            line-height: 25px;
+        }
+    }
+
+    .numberNomination{
+        font-family: $font-familyRaleway;
+        font-size: 50px;
+        color: #f43866;
+    }
+    .subtitle {
+        font-size: 17px;
+        color: #f43866;
+        margin-top: 5px;
+        font-family: $font-familyRaleway;
+        font-weight: bold;
+
+        &::after{
+            content: "";
+            display: block;
+            height: 4px;
+            background-color: #fff;
+            width: 100px;
+            margin-top: 5px;
+
+        }
+    }
+
+    .agenciesWrapper {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .btn {
+            border: none;
+            background-color: #f2184f;
+            color: #fff;
+            padding: 7px 40px;
+            font-family: $font-familyRaleway;
+            font-size: 17px;
+            cursor: pointer;
+        }
+        .awardsTitleWrapper{
+            margin-right: 100px;
+        }
+    }
+    .step {
+        color: #c7c5c1;
+        font-size: 90px;
+        font-family: $font-familyRaleway;
+        font-weight: bold;
+        margin-right: 20px;
+
+    }
+}

@@ -1,0 +1,75 @@
+$font-familyRaleway: 'Raleway', sans-serif;
+
+.servicesWrapper{
+    padding: 20px 230px;
+    .step2{
+        display: flex;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        .services{
+            font-size: 15px;
+            font-family: $font-familyRaleway;
+            color: #000;
+            margin-bottom: 10px;
+        }
+        .title{
+            font-size: 35px;
+            font-family: $font-familyRaleway;
+            color: #000;
+            font-weight: bold;
+            margin-right: 200px;
+            margin-bottom: 40px;
+            .howStl{
+                color: #f2184f;
+                font-family: $font-familyRaleway;
+            }
+        }
+        .number{
+            color: #c7c5c1;
+            font-size: 90px;
+            font-family: $font-familyRaleway;
+            font-weight: bold;
+        }
+    }
+
+    .services{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        gap: 30px;
+        .service{
+            padding: 20px;
+            border: 1px solid #000;
+            transition: box-shadow .3s;
+            .imgLogo{
+                width: 50px;
+                margin-bottom: 20px;
+            }
+            .serviceTitle{
+                font-size: 17px;
+                font-family: $font-familyRaleway;
+                margin-bottom: 10px;
+                font-weight: bold;
+
+                &::after{
+                    content: "";
+                    height: 2px;
+                    width: 100px;
+                    background-color: #f2184f;
+                    display: block;
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                }
+            }
+            .serviceDescription{
+                color: #323639;
+                font-size: 15px;
+                line-height: 25px;
+                font-family: $font-familyRaleway;
+            }
+        }
+
+        .service:hover{
+            box-shadow: 0 0 50px rgba(209, 17, 17, 0.2); 
+        }
+    }
+}

@@ -1,0 +1,44 @@
+$font-familyRaleway: 'Raleway', sans-serif;
+
+.aboutsWrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .img{
+        width: 100%;
+        height: 100%;
+    }
+    .aboutDescription {
+        background-color: #000;
+        color: #fff;
+        padding-left: 40px;
+        padding-top: 50px;
+        padding-right: 200px;
+        padding-bottom: 40px;
+    }
+
+    .title {
+        font-size: 31px;
+        font-family: $font-familyRaleway;
+        font-weight: bold;
+        line-height: 35px;
+        margin-bottom: 20px;
+    }
+    .helpTitle{
+        font-size: 15px;
+        font-family: $font-familyRaleway;
+        line-height: 25px;
+        margin-bottom: 20px;
+    }
+    .description {
+        font-size: 15px;
+        font-family: $font-familyRaleway;
+        line-height: 25px;
+        margin-bottom: 20px;
+    }
+    .cvFree{
+        font-size: 15px;
+        font-family: $font-familyRaleway;
+        line-height: 25px;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,116 @@
+$font-familyRaleway: 'Raleway', sans-serif;
+
+.teamWrapper{
+    padding: 20px 220px;
+    .titleWrapper{
+        display: flex;
+        align-items: center;
+        .title{
+            font-size: 35px;
+            font-family: $font-familyRaleway;
+            color: #080000;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .number {
+            color: #c7c5c1;
+            font-size: 90px;
+            font-family: $font-familyRaleway;
+            font-weight: bold;
+        }
+    }
+
+    .teamWorkersWrapper{
+        padding: 20px 30px;
+        text-align: center;
+    }
+    .worker {
+        background-image: url('../../../public/images/teamJohn.png');
+        padding: 130px 80px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+        border: 15px solid #c7c5c1;
+        background-position: center;
+        position: relative;
+        width: 95%;
+    }
+    .worker:hover {
+        .linkWrapper{
+            opacity: 1;
+        }
+    }
+    .workerBioWrapper{
+        margin-top: 20px;
+        padding: 5px 40px;
+        .name{
+            font-size: 24px;
+            color: #020100;
+            font-family: $font-familyRaleway;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .description{
+            font-size: 14px;
+            color: #050300;
+            font-family: $font-familyRaleway;
+            line-height: 20px;
+        }
+    }
+    .worker2{
+        background-image: url('../../../public/images/teamKuba.png');
+        padding: 130px 80px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+
+        border: 15px solid #c7c5c1;
+        position: relative;
+        width: 95%;
+    }
+    
+    .worker2:hover {
+        .linkWrapper{
+            opacity: 1;
+        }
+    }
+
+    .linkWrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        opacity: 0;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(233,58,104, 0.8);
+        top: 0;
+        left: 0;
+        border-radius: 50%;
+        transition: 0.8s;
+        .link {
+            background-color: #fff;
+            border-radius: 35px;
+            display: flex;
+            padding: 5px;
+        }
+    }
+
+    .worker3{
+        background-image: url('../../../public/images/teamFil.png');
+        padding: 130px 80px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+        border: 15px solid #c7c5c1;
+        background-position: center;
+        position: relative;
+        width: 95%;
+    }
+    .worker3:hover {
+        .linkWrapper{
+           opacity: 1;
+        }
+    }
+}

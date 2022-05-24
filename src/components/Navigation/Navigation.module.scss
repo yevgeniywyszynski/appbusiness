@@ -1,0 +1,57 @@
+$font-familyRaleway: 'Raleway', sans-serif;
+
+.headerWrapper{
+
+}
+
+.navigationWrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .navigation {
+        display: flex;
+        gap: 50px;
+        text-decoration: none;
+        list-style: none;
+        align-items: center;
+        .navigationElement{
+            font-size: 17px;
+            text-decoration: none;
+            color: #000;
+            font-family: $font-familyRaleway;
+        }
+        .searchlogo{
+            font-size: 20px;
+        }
+    }
+}
+
+.btnSinup {
+    border: none;
+    background-color: #f2184f;
+    color: #fff;
+    padding: 7px 40px;
+    font-family: $font-familyRaleway;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.titleDescriptionWrapper{
+    padding: 200px 230px;
+    .title {
+        font-size: 40px;
+        color: #000;
+        margin-bottom: 10px;
+        line-height: 45px;
+        font-family: $font-familyRaleway;
+        font-weight: bold;
+    }
+    .subtitle {
+        color: #f2184f;
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-size: 20px;
+        font-family: $font-familyRaleway;
+    }
+}

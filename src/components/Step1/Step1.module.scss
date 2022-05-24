@@ -1,0 +1,42 @@
+$font-familyRaleway: 'Raleway', sans-serif;
+
+.stepWrapper{
+    display: flex;
+    padding: 20px 230px;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    .number {
+        color: #c7c5c1;
+        font-size: 90px;
+        font-family: $font-familyRaleway;
+        font-weight: bold;
+        margin-right: 45px;
+    }
+
+    .upTitle {
+        font-size: 17px;
+        font-family: $font-familyRaleway;
+        color: #000;
+    }
+
+    .title {
+        font-size: 35px;
+        color: #000;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-family: $font-familyRaleway;
+        font-weight: bold;
+        .canStyl {
+            color: #f2184f;
+            font-weight: bold;
+        }
+    }
+
+    .subtitle {
+        font-size: 20px;
+        color: #605f5f;
+        font-family: $font-familyRaleway;
+    }
+}
