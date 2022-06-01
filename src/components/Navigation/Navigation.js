@@ -1,9 +1,11 @@
 import React, {useRef, useEffect, useState} from 'react'
 import styles from './Navigation.module.scss';
-import { FaSearch } from "react-icons/fa";
+import { FaSearch, FaBars } from "react-icons/fa";
 import {NavLink, useNavigate, Link} from 'react-router-dom';
 
 const Navigation = () => {
+
+    const [isMenuVisible, setIsMenuVisible] = useState(false)
 
     return(
         <div className={styles.headerWrapper}>
@@ -14,7 +16,7 @@ const Navigation = () => {
                     </Link>
                 </div>
                 <nav className={styles.navigationMenu}>
-                    <ul className={styles.navigation}>
+                    <ul className={`${styles.navigation} ${isMenuVisible ? styles.visible : ''}`}>
                         <li className={styles.navigationElement}>
                             <NavLink className={styles.navigationElement} to="/">Home</NavLink>
                         </li>
@@ -36,6 +38,9 @@ const Navigation = () => {
                         <FaSearch className={styles.searchlogo} />
                         <button type="button" className={styles.btnSinup}>SINUP NOW</button>
                     </ul>
+                    <button onClick={e => setIsMenuVisible(prev => !prev)} className={styles.respBtn}>
+                        <FaBars />
+                    </button>
                 </nav>
             </div>
         </div>

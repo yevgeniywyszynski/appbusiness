@@ -86,3 +86,23 @@ $font-familyRaleway: 'Raleway', sans-serif;
 
     }
 }
+
+@media (max-width: 1100px) {
+    .blogWrapper {
+        padding: 20px 150px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .blogWrapper {
+        padding: 20px 50px;
+    }
+}
+
+@media (max-width: 800px) {
+    .blogWrapper {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+}
+

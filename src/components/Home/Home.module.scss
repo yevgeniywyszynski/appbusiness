@@ -32,3 +32,10 @@ $font-familyRaleway: 'Raleway', sans-serif;
         font-family: $font-familyRaleway;
     }
 }
+
+@media (max-width: 900px) {
+    .titleDescriptionWrapper {
+        background-position: center;
+        padding: 200px 50px;
+    }
+}

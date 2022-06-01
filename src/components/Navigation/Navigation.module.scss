@@ -15,6 +15,10 @@ $font-familyRaleway: 'Raleway', sans-serif;
         text-decoration: none;
         list-style: none;
         align-items: center;
+
+
+
+
         .navigationElement{
             font-size: 17px;
             text-decoration: none;
@@ -54,4 +58,41 @@ $font-familyRaleway: 'Raleway', sans-serif;
         font-size: 20px;
         font-family: $font-familyRaleway;
     }
+}
+
+.respBtn{
+    border: none;
+    background-color: #f2184f;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+    padding: 8px 9px;
+    display: none;
+
+}
+
+@media(max-width: 1200px){
+    .navigationWrapper{
+        .navigation{
+            display: none;
+
+            &.visible{
+                position: absolute;
+                left: 0;
+                background-color: #ffff;
+                z-index: 9999;
+                width: 100%;
+                flex-direction: column;
+                gap: 20px;
+                padding: 20px;
+                top: 82px;
+                display: flex;
+            }
+        }
+    }
+
+    .respBtn {
+        display: flex;
+    }
+    
 }

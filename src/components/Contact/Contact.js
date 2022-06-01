@@ -20,7 +20,7 @@ const Contact = () => {
                     <div className={styles.contactIcon}>
                         <FaMailBulk className={styles.ico}/>
                         <p className={styles.street}>
-                            consultation@gmail.com
+                            consultation@gmail.com <br/>
                             consultation@gmail.com
                         </p>
                     </div>

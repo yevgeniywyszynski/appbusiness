@@ -3,9 +3,11 @@ $font-familyRaleway: 'Raleway', sans-serif;
 .aboutsWrapper{
     display: grid;
     grid-template-columns: 1fr 1fr;
+
     .img{
         width: 100%;
         height: 100%;
+        object-fit: cover;
     }
     .aboutDescription {
         background-color: #000;
@@ -40,5 +42,20 @@ $font-familyRaleway: 'Raleway', sans-serif;
         font-family: $font-familyRaleway;
         line-height: 25px;
         margin-bottom: 20px;
+    }
+}
+
+@media(max-width: 1000px) {
+
+    .aboutsWrapper{
+        .aboutDescription {
+            padding-right: 100px;
+        }
+    }
+}
+
+@media(max-width: 800px) {
+    .aboutsWrapper {
+        grid-template-columns: 1fr;
     }
 }

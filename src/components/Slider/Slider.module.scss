@@ -155,3 +155,21 @@ $font-familyRaleway: 'Raleway', sans-serif;
     font-size: 17px;
     cursor: pointer;
 }
+
+@media (max-width: 1000px) {
+
+        .stepWrapper{
+            flex-direction: column;
+            .number {
+                margin-right: 0;
+            }
+        
+        }
+    
+}
+
+@media(max-width: 800px) {
+    .portfolioWrapper {
+        padding: 20px 100px;
+    }
+}
